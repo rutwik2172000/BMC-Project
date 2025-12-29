@@ -125,12 +125,12 @@
 }
 
 .slide-yellow {
-  background-image: url("/assets/images/home/slider_bg.png");
+  background-image: url("../images/home/slider_bg.png");
   color: #20b3cf;
 }
 
 .slide-blue {
-  background-image: url("/assets/images/home/slider_bg4.png");
+  background-image: url("../images/home/slider_bg4.png");
   color: #ffd400;
 }
 
@@ -452,7 +452,7 @@
   position: relative;
   padding: 70px 0 20px 0;
   background-color: #ffffff;
-  background-image: url("/assets/images/home/pet.png");
+  background-image: url("../images/home/pet.png");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 250px;
@@ -585,7 +585,7 @@
   background-color: #fffad6;
 
   /* Background Image */
-  background-image: url(/assets/images/home/Chappo.png);
+  background-image: url("../images/home/Chappo.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 600px auto;
@@ -688,7 +688,7 @@
   position: relative;
 
   /* Footer Illustration */
-  background-image: url(/assets/images/home/footer.png);
+  background-image: url("../images/home/footer.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% auto; 
@@ -778,7 +778,7 @@
 /* <!-- First Section of About-Us page Start --> */
 
 .bhokaal-section {
-  background-image: url("/assets/images/franchise/location_bg.png");
+  background-image: url("../images/franchise/location_bg.png");
   background-repeat: repeat;
   background-size: auto;
   background-color: #ffd400;
@@ -836,9 +836,9 @@
   overflow: hidden;
 
   /* MULTIPLE BACKGROUND IMAGES */
-  background-image: url("/assets/images/home/plan.png"),
-    url("/assets/images/home/cup.png"), url("/assets/images/home/robo.png"),
-    url("/assets/images/about/fish2.png");
+  background-image: url("../images/home/plan.png"),
+    url("../images/home/cup.png"), url("../images/home/robo.png"),
+    url("../images/about/fish2.png");
 
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
@@ -890,8 +890,8 @@
   overflow: hidden;
 
   /* Background Images */
-  background-image: url("/assets/images/about/cemra.png"),
-    url("/assets/images/about/ship.png");
+  background-image: url("../images/about/cemra.png"),
+    url("../images/about/ship.png");
 
   background-repeat: no-repeat, no-repeat;
 
@@ -973,8 +973,8 @@
   overflow: hidden;
 
   /* Backgrounds */
-  background-image: url("/assets/images/about/radio.png"),
-    url("/assets/images/about/auto.png");
+  background-image: url("../images/about/radio.png"),
+    url("../images/about/auto.png");
 
   background-repeat: no-repeat, no-repeat;
 
@@ -1049,7 +1049,7 @@
 /* <!-- First Section of Menu page Start --> */
 
 .food-mood-section {
-  background-image: url("/assets/images/franchise/location_bg.png");
+  background-image: url("../images/franchise/location_bg.png");
   background-repeat: repeat;
   background-size: auto;
   background-color: #ffd400;
@@ -1115,7 +1115,7 @@
 /* <!-- First Section of location page Start --> */
 
 .gupshup-section {
-  background-image: url("/assets/images/franchise/location_bg.png");
+  background-image: url("../images/franchise/location_bg.png");
   background-repeat: repeat;
   background-size: auto;
   background-color: #ffd400;
@@ -1246,7 +1246,7 @@
   width: 100%;
   min-height: 500px;
   background-color: #ffd400;
-  background-image: url("/assets/images/home/slider_bg.png");
+  background-image: url("../images/home/slider_bg.png");
   background-repeat: repeat;
   background-size: auto;
   padding: 100px 0;
@@ -1361,7 +1361,7 @@
 /* <!-- First Section of Franchise page Start --> */
 
 .franchise-hero {
-  background-image: url("/assets/images/franchise/location_bg.png");
+  background-image: url("../images/franchise/location_bg.png");
   background-repeat: repeat;
   background-size: auto;
   background-color: #ffd400;
@@ -1436,7 +1436,7 @@
   top: 6px;
   width: 18px;
   height: 18px;
-  background-image: url("/assets/images/franchise/career6.png");
+  background-image: url("../images/franchise/career6.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1449,8 +1449,8 @@
   width: 100%;
   min-height: 320px;
   background-color: #1fb2cc;
-  background-image: url("/assets/images/franchise/career4.png"),
-    url("/assets/images/franchise/career5.png");
+  background-image: url("../images/franchise/career4.png"),
+    url("../images/franchise/career5.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, right bottom;
   background-size: 180px, 220px;
@@ -1496,7 +1496,7 @@
 
 .bmc-career-bs-section {
   background-color: #ffd400;
-  background-image: url("/assets/images/franchise/location_bg.png");
+  background-image: url("../images/franchise/location_bg.png");
   background-repeat: repeat;
   padding: 50px 0;
 }
@@ -1524,9 +1524,9 @@
 
 .bmc-career-story-section {
   background-color: #fffbdc;
-  background-image: url("/assets/images/career/Career12.png"),
-    url("/assets/images/career/Career13.png"),
-    url("/assets/images/career/Career14.png");
+  background-image: url("../images/career/Career12.png"),
+    url("../images/career/Career13.png"),
+    url("../images/career/Career14.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left center, right top, right bottom;
   background-size: 220px, 160px, 200px;
@@ -1561,9 +1561,9 @@
 
 .bmc-keyfunc-section {
   background-color: #1fb2cc;
-  background-image: url("/assets/images/career/Career15.png"),
-    url("/assets/images/career/Career16.png"),
-    url("/assets/images/career/Career17.png");
+  background-image: url("../images/career/Career15.png"),
+    url("../images/career/Career16.png"),
+    url("../images/career/Career17.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left bottom, right top, right bottom;
   background-size: 180px, 140px, 180px;
@@ -1607,7 +1607,7 @@
 
 .bmc-culture-section {
   background-color: #ffffff;
-  background-image: url("/assets/images/career/Career18.png");
+  background-image: url("../images/career/Career18.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 260px;
@@ -1649,7 +1649,7 @@
 /* <!-- First Section of Contact-Us page Start --> */
 
 .franchise-bs-section {
-  background-image: url("/assets/images/franchise/location_bg.png");
+  background-image: url("../images/franchise/location_bg.png");
   background-repeat: repeat;
   background-size: auto;
   background-color: #ffd400;
@@ -1687,8 +1687,8 @@
 
 .bmc-contact-section {
   background-color: #ffffff;
-   background-image: url("/assets/images/contact/Success.png"), 
-    url("/assets/images/contact/tel.png"); 
+   background-image: url("../images/contact/Success.png"), 
+    url("../images/contact/tel.png"); 
 
   background-repeat: no-repeat, no-repeat;
 
