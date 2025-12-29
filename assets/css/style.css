@@ -1,0 +1,1777 @@
+/*Page Loader All Page Section Start*/
+
+.se-pre-con {
+  position: fixed;
+  inset: 0;
+  background-color: #fffad6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1055; 
+}
+
+.se-pre-con img {
+  width: 500px;
+}
+
+/* Hide loader */
+.se-pre-con.hide {
+  display: none;
+}
+
+/*Page Loader All Page Section End*/
+
+/* Navabar Section For All Page  Start */
+
+/* Nvabar Base */
+.custom-navbar {
+  background: #fffad6;
+  padding: 22px 0;
+  position: relative;
+  z-index: 999;
+  height: 70px;
+}
+
+/* Links */
+.custom-navbar .nav-link {
+  color: #00a6c8;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 14px;
+  position: relative;
+}
+
+/* Underline Animation */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  background: #ffd400;
+  transition: 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/* Center Logo Fix */
+
+.center-logo {
+  position: absolute;
+  margin: 0 auto;
+  width: 190px;
+  padding: 0px;
+  text-align: center;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.center-logo img {
+  height: 120px;
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+  .custom-navbar {
+    background: #20b3cf;
+    padding: 15px 20px;
+  }
+
+  .center-logo {
+    display: block;
+    width: 210px;
+  }
+
+  .navbar-collapse {
+    background: #20b3cf;
+    height: 100vh;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    gap: 12px;
+  }
+
+  .custom-navbar .nav-link {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .custom-navbar .nav-link::after {
+    display: none;
+  }
+}
+
+/* Navabar Section For All Page End */
+
+/* <!-- First secton of Home Page  Start--> */
+
+.hero-slide {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
+.slide-yellow {
+  background-image: url("/assets/images/home/slider_bg.png");
+  color: #20b3cf;
+}
+
+.slide-blue {
+  background-image: url("/assets/images/home/slider_bg4.png");
+  color: #ffd400;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-top: 15px;
+  max-width: 520px;
+}
+
+/* Indicators */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Custom Arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  opacity: 1;
+}
+
+.carousel-control-prev img,
+.carousel-control-next img {
+  width: 40px;
+}
+
+.arrow-color {
+  display: none;
+}
+
+.carousel-control-prev:hover .arrow-gray,
+.carousel-control-next:hover .arrow-gray {
+  display: none;
+}
+
+.carousel-control-prev:hover .arrow-color,
+.carousel-control-next:hover .arrow-color {
+  display: block;
+}
+
+/* Mobile & Tablet*/
+@media (max-width: 991px) {
+  .hero-slide {
+    min-height: auto;
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .hero-content {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  /* arrows slightly lower on mobile */
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 40%;
+  }
+}
+
+/* <!-- First secton of Home Page End --> */
+
+/* <!-- Second section of Home Page Start --> */
+
+.apna-tashan-section {
+  background: #fffbdc;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* Left Image */
+.tashan-illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right Content */
+.tashan-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #22b1c9;
+  margin-bottom: 20px;
+}
+
+.tashan-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 520px;
+}
+
+.btn-know-more {
+  background: #ffd400;
+  border: none;
+  color: #000;
+  padding: 12px 32px;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Floting Icons */
+.floating-icon {
+  position: absolute;
+  z-index: 1;
+}
+
+.icon-robo {
+  left: 40px;
+  bottom: 40px;
+  width: 70px;
+}
+
+.icon-plan {
+  right: 120px;
+  top: 80px;
+  width: 60px;
+}
+
+.icon-cup {
+  right: 40px;
+  top: 120px;
+  width: 70px;
+}
+
+.bottom-fish {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-0%);
+  width: 50%;
+  max-width: 800px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/*  Responsive  */
+@media (max-width: 991px) {
+  .apna-tashan-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .tashan-content h2 {
+    font-size: 34px;
+  }
+
+  .tashan-content p {
+    max-width: 100%;
+  }
+
+  .floating-icon {
+    display: none;
+  }
+
+  .bottom-fish {
+    width: 100%;
+  }
+}
+
+/* <!-- Second section of Home Page End --> */
+
+/* <!-- Third section of Home Page Start --> */
+
+.apne-adde-section {
+  background: #ffd400;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 140px;
+  text-align: center;
+}
+
+/* Header */
+.apne-adde-section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #22b1c9;
+  margin-bottom: 10px;
+}
+
+.apne-adde-section p.subtitle {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  font-size: 15px;
+  color: #000;
+}
+
+/* Location Card */
+.location-card {
+  text-align: center;
+}
+
+.location-icon {
+  width: 140px;
+  height: 140px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.location-icon img {
+  width: 60px;
+}
+
+.location-card h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.location-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Button */
+.btn-directions {
+  background: #22b1c9;
+  color: #fff;
+  border-radius: 50px;
+  padding: 12px 36px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* Image */
+.adde-ricksaw {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 200px;
+}
+
+.adde-city {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 260px;
+}
+
+/*  Responsive  */
+@media (max-width: 991px) {
+  .apne-adde-section {
+    padding: 60px 15px 100px;
+  }
+
+  .apne-adde-section h2 {
+    font-size: 32px;
+  }
+
+  .location-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .adde-ricksaw,
+  .adde-city {
+    display: none;
+  }
+}
+
+/* Menu section */
+.food-mood-section {
+  background: #ffffff;
+}
+
+/* Title */
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1cb1cd;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  max-width: 750px;
+  margin: 0 auto 50px;
+  color: #555;
+}
+
+/* <!-- Third section of Home Page End --> */
+
+/* <!-- Forth section of Home Page Start--> */
+
+.pet_puja_block {
+  position: relative;
+  padding: 70px 0 20px 0;
+  background-color: #ffffff;
+  background-image: url("/assets/images/home/pet.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 250px;
+}
+
+/* Heading */
+
+.pet_puja_title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1cb1cd;
+  margin-bottom: 10px;
+}
+
+.pet_puja_subtitle {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Menu Card */
+
+.pet_menu_card {
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Image */
+.pet_menu_card img {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.pet_menu_card h5 {
+  color: #1cb1cd;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.pet_menu_card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Full Border (Hover + Click) */
+
+.pet_menu_card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px dashed #1cb1cd;
+  border-radius: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover border */
+.pet_menu_card:hover::before {
+  opacity: 1;
+}
+
+/* Active border */
+.pet_menu_card.active::before {
+  opacity: 1;
+}
+
+/* Keep content above border */
+.pet_menu_card img,
+.pet_menu_card h5,
+.pet_menu_card p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Button */
+
+.pet_menu_btn {
+  background: #1cb1cd;
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.pet_menu_btn:hover {
+  background: #1697ae;
+  color: #ffffff;
+}
+
+/* Carousel Controls */
+
+.pet_puja_block .carousel-control-prev-icon,
+.pet_puja_block .carousel-control-next-icon {
+  filter: invert(42%) sepia(92%) saturate(454%) hue-rotate(153deg);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .pet_puja_title {
+    font-size: 32px;
+  }
+
+  .pet_menu_card img {
+    max-width: 150px;
+  }
+}
+
+/* <!-- Forth section of Home Page End--> */
+
+/* <!-- Fifth section of Home Page Start--> */
+
+.Lallo__block {
+  position: relative;
+  padding: 40px 0 160px;
+  background-color: #fffad6;
+
+  /* Background Image */
+  background-image: url(/assets/images/home/Chappo.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 600px auto;
+}
+
+/* Heading */
+.text_wrapper {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.Lallo__block h1 {
+  font-size: 48px;
+  color: #22b1c9;
+  font-weight: 700;
+}
+
+.Lallo__block p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Cards */
+.Adde_Services {
+  text-align: center;
+  padding: 20px;
+}
+
+.Adde_Services .icon img {
+  width: 110px;
+  margin-bottom: 15px;
+}
+
+.en_head {
+  font-size: 14px;
+  font-weight: 600;
+  color: #22b1c9;
+  margin-bottom: 10px;
+}
+
+.en_head_2 {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Carousel arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(60%);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .Lallo__block {
+    background-size: 80%;
+    background-position: center bottom;
+    padding-bottom: 220px;
+  }
+}
+
+/* <!-- Fifth section of Home Page End--> */
+
+/* <!-- Sixth section of Home Page Start--> */
+
+.bmc-cta {
+  background-color: #22b1c9;
+  padding: 70px 15px;
+  color: #fff;
+}
+
+.bmc-cta h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.bmc-cta p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-size: 16px;
+}
+
+.bmc-cta .cta-btn {
+  padding: 12px 35px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+/* <!-- Sixth section of Home Page End--> */
+
+/* <!-- Footer section of Home Page Start--> */
+.bmc-footer {
+  background-color: #fffad6;
+  position: relative;
+
+  /* Footer Illustration */
+  background-image: url(/assets/images/home/footer.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto; 
+
+  padding-bottom: 500px;
+}
+
+.footer-menu-wrap {
+  border-bottom: 3px solid #22b1c9;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #22b1c9;
+  font-weight: 500;
+}
+
+/* Address */
+.footer-info {
+  margin-top: 30px;
+}
+
+.footer-info p {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.footer-info a {
+  color: #22b1c9;
+  text-decoration: none;
+}
+
+/* Social */
+.footer-social {
+  margin: 25px 0;
+}
+
+.footer-social a {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  background: #ffd400;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+}
+
+.footer-social img {
+  width: 20px;
+}
+
+/* Footer Copy */
+.footer-copy {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bmc-footer {
+    background-size: auto 240px;
+    padding-bottom: 240px;
+  }
+}
+
+/* <!-- Footer section of Home Page End --> */
+
+/* Home Page End  */
+
+/* About Page start */
+
+/* <!-- First Section of About-Us page Start --> */
+
+.bhokaal-section {
+  background-image: url("/assets/images/franchise/location_bg.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #ffd400;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image */
+.bhokaal-img {
+  max-width: 520px;
+}
+
+/* Tittle*/
+.bhokaal-title {
+  color: #1fb3cf;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+/* Text */
+.bhokaal-text {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  max-width: 460px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bhokaal-title {
+    font-size: 30px;
+  }
+
+  .bhokaal-text {
+    font-size: 14px;
+  }
+
+  .bhokaal-img {
+    max-width: 360px;
+  }
+}
+
+/* <!-- First Section of About-Us page End --> */
+
+/* <!-- Second Section of About-Us page Start --> */
+ 
+.apna-tashan {
+  position: relative;
+  background-color: #fffbd8;
+  padding: 90px 0 180px;
+  overflow: hidden;
+
+  /* MULTIPLE BACKGROUND IMAGES */
+  background-image: url("/assets/images/home/plan.png"),
+    url("/assets/images/home/cup.png"), url("/assets/images/home/robo.png"),
+    url("/assets/images/about/fish2.png");
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+  background-position: right 300px top 60px, /* plane */ right 40px top 110px,
+    /* cup */ left bottom, /* robo */ right bottom; /* fish wave */
+
+  background-size: 70px auto, 90px auto, 120px auto, 720px auto;
+}
+
+/* TITLE */
+.tashan-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #20b3cf;
+  margin-bottom: 25px;
+}
+
+/* TEXT */
+.apna-tashan p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 18px;
+  max-width: 520px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .apna-tashan {
+    padding: 60px 0 260px;
+    background-position: right 40px top 40px, right 10px top 100px,
+      left 10px bottom 160px, center bottom;
+    background-size: 50px auto, 65px auto, 90px auto, 100% auto;
+  }
+
+  .tashan-title {
+    font-size: 32px;
+  }
+}
+
+/* <!-- Second Section of About-Us page End --> */
+
+/* <!-- Third Section of About-Us page Start --> */
+
+.experience-section {
+  position: relative;
+  background-color: #f2653a;
+  padding: 90px 0 120px;
+  overflow: hidden;
+
+  /* Background Images */
+  background-image: url("/assets/images/about/cemra.png"),
+    url("/assets/images/about/ship.png");
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-position: right 40px top 40px,  left bottom;
+
+  background-size: 120px auto, 520px auto;
+}
+
+/* Tittle */
+.exp-title {
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Subtittle */
+.exp-subtitle {
+  color: #ffffff;
+  font-size: 15px;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Card */
+.exp-card {
+  background: #ffffff;
+  padding: 40px 25px;
+  height: 100%;
+}
+
+.exp-card h4 {
+  color: #20b3cf;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* List */
+.exp-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-card ul li {
+  padding: 12px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #222;
+}
+
+.exp-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .experience-section {
+    padding: 70px 0 100px;
+    background-position: right 20px top 20px, center bottom;
+    background-size: 90px auto, 100% auto;
+  }
+
+  .exp-title {
+    font-size: 32px;
+  }
+}
+
+/* <!-- Third Section of About-Us page End --> */
+
+/* <!-- Forth Section of About-Us page Start --> */
+
+.winning-section {
+  position: relative;
+  padding: 90px 0 120px;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  /* Backgrounds */
+  background-image: url("/assets/images/about/radio.png"),
+    url("/assets/images/about/auto.png");
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-position: right 40px top 40px, left bottom;
+
+  background-size: 140px auto, 280px auto;
+}
+
+/* Header */
+.winning-header h2 {
+  color: #20b3cf;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.winning-header p {
+  font-size: 15px;
+  color: #333;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Base Box*/
+.winning-box {
+  padding: 28px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.winning-box.blue {
+  background-color: #22b1c9;
+  color: #ffffff;
+}
+
+/* Hover Effect */
+.winning-box.blue:hover,
+.winning-box.active {
+  background-color: #fffad6;
+  color: #22b1c9;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .winning-section {
+    padding: 70px 0 90px;
+    background-position: right 20px top 20px, center bottom;
+    background-size: 100px auto, 100% auto;
+  }
+
+  .winning-header h2 {
+    font-size: 30px;
+  }
+
+  .winning-img {
+    max-width: 100%;
+  }
+}
+
+/* <!-- Forth Section of About-Us page End --> */
+
+/* About-Us Page End */
+
+/* Menu Page start */
+
+/* <!-- First Section of Menu page Start --> */
+
+.food-mood-section {
+  background-image: url("/assets/images/franchise/location_bg.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #ffd400;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Food Image */
+.food-circle {
+  max-width: 420px;
+}
+
+/* Text */
+.food-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.food-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ffffff;
+  max-width: 480px;
+}
+
+/* Menu Cards */
+.menu-images {
+  margin-top: 40px;
+}
+
+.menu-card {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .food-title {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .food-text {
+    text-align: center;
+    margin: auto;
+  }
+
+  .food-circle {
+    max-width: 300px;
+  }
+}
+
+/* <!-- First Section of Menu page End --> */
+
+/* Menu Page End */
+
+/* Location Page start */
+
+/* <!-- First Section of location page Start --> */
+
+.gupshup-section {
+  background-image: url("/assets/images/franchise/location_bg.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #ffd400;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image */
+.gupshup-img {
+  max-width: 520px;
+}
+
+/* Text */
+.gupshup-title {
+  font-size: 46px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.gupshup-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ffffff;
+  max-width: 450px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gupshup-title {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .gupshup-text {
+    text-align: center;
+    margin: auto;
+  }
+
+  .gupshup-img {
+    max-width: 300px;
+  }
+}
+
+/* <!-- First Section of location page End --> */
+
+/* <!-- Second Section of location page Start --> */
+
+.location-block {
+  background: #fffad6;
+  padding: 80px 0;
+}
+
+.location-wrapper {
+  align-items: flex-start;
+}
+
+/* Left */
+.location-left {
+  border-right: 4px solid #f2c400;
+  padding-right: 20px;
+}
+
+.location-address {
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.location-address h6 {
+  color: #22b1c9;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.location-address h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.location-address p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.location-address:hover,
+.location-address.active {
+  background: #fff3a0;
+  border-left-color: #22b1c9;
+}
+
+/* Right Map */
+.location-right iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.map-box {
+  display: none;
+}
+
+.map-box.active {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .location-left {
+    border-right: none;
+    margin-bottom: 30px;
+  }
+}
+
+/* <!-- Second Section of location page End --> */
+
+/* Location Page End */
+
+/* Gallery Page start */
+
+/* <!-- First Section of Gallery page Start --> */
+
+.bhokaal-section {
+  width: 100%;
+  min-height: 500px;
+  background-color: #ffd400;
+  background-image: url("/assets/images/home/slider_bg.png");
+  background-repeat: repeat;
+  background-size: auto;
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Left Image */
+.bhokaal-image img {
+  max-width: 520px;
+}
+
+/* Right Text */
+.bhokaal-content {
+  color: #fff;
+  padding: 40px 80px;
+}
+
+.bhokaal-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bhokaal-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .bhokaal-content {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .bhokaal-content h2 {
+    font-size: 32px;
+  }
+
+  .bhokaal-image img {
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
+}
+
+/* <!-- First Section of Gallery page End --> */
+
+/* <!-- Seconad Section of Gallery page Start --> */
+
+.gallery {
+  gap: 4px; 
+}
+
+.gallery-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+/* Image Card */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  height: 220px; /* ⭐ REQUIRED */
+}
+
+/* Image */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ⭐ IMPORTANT */
+  transition: transform 0.5s ease;
+}
+
+/* Hover Zoom */
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Border highlight */
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  box-shadow: inset 0 0 0 2px rgba(255, 212, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    height: 150px;
+  }
+}
+
+/* <!-- Second Section of Gallery page End --> */
+
+/* Gallery Page End */
+
+/* Franchise Page Start  */
+
+/* <!-- First Section of Franchise page Start --> */
+
+.franchise-hero {
+  background-image: url("/assets/images/franchise/location_bg.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #ffd400;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left Image */
+.franchise-image img {
+  max-width: 95%;
+}
+
+/* Right Content */
+.franchise-content {
+  color: #ffffff;
+  padding: 20px 60px;
+}
+
+.franchise-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.franchise-content p {
+  font-size: 18px;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .franchise-hero {
+    padding: 70px 20px;
+    text-align: center;
+  }
+
+  .franchise-content {
+    padding: 30px 20px;
+  }
+
+  .franchise-content h1 {
+    font-size: 36px;
+  }
+}
+
+/* <!-- First Section of Franchise page End --> */
+
+/* <!-- Second Section of Franchise page Start --> */
+
+.franchise-text ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.franchise-text li {
+  position: relative;
+  padding-left: 32px; 
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.7;
+  list-style: none;
+}
+
+/* Star Image */
+.franchise-text li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background-image: url("/assets/images/franchise/career6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* <!-- Second Section of Franchise page End --> */
+
+/* <!-- Third Section of Franchise page Start --> */
+
+.bmc-franchise-banner {
+  width: 100%;
+  min-height: 320px;
+  background-color: #1fb2cc;
+  background-image: url("/assets/images/franchise/career4.png"),
+    url("/assets/images/franchise/career5.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
+  background-size: 180px, 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.bmc-franchise-wrapper {
+  max-width: 920px;
+  color: #ffffff;
+}
+
+.bmc-franchise-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffd400;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.bmc-franchise-text {
+  font-size: 16px;
+  color: #08363f;
+  margin-bottom: 22px;
+}
+
+.bmc-franchise-contact {
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* <!-- Third Section of Franchise page End --> */
+
+/* Franchise Page End */
+
+/* Careeer Page Start */
+
+/* <!-- First Section of Careers page Start --> */
+
+.bmc-career-bs-section {
+  background-color: #ffd400;
+  background-image: url("/assets/images/franchise/location_bg.png");
+  background-repeat: repeat;
+  padding: 50px 0;
+}
+
+.bmc-career-bs-image {
+  max-width: 380px;
+}
+
+.bmc-career-bs-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.bmc-career-bs-content p {
+  font-size: 17px;
+  color: #ffffff;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+/* <!-- First Section of Careers page End --> */
+
+/* <!-- Second Section of Careers page Start --> */
+
+.bmc-career-story-section {
+  background-color: #fffbdc;
+  background-image: url("/assets/images/career/Career12.png"),
+    url("/assets/images/career/Career13.png"),
+    url("/assets/images/career/Career14.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left center, right top, right bottom;
+  background-size: 220px, 160px, 200px;
+  padding: 80px 0;
+}
+
+/*  Text style */
+
+.bmc-career-story-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #1fb2cc;
+  margin-bottom: 12px;
+}
+
+.bmc-career-story-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.bmc-career-story-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* <!-- Second Section of Careers page end --> */
+
+/* <!-- Third Section of Careers page Start --> */
+
+.bmc-keyfunc-section {
+  background-color: #1fb2cc;
+  background-image: url("/assets/images/career/Career15.png"),
+    url("/assets/images/career/Career16.png"),
+    url("/assets/images/career/Career17.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left bottom, right top, right bottom;
+  background-size: 180px, 140px, 180px;
+  padding: 80px 0;
+}
+
+/*  Tittles  */
+
+.bmc-keyfunc-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.bmc-keyfunc-subtitle {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+/* Boxes */
+
+.bmc-keyfunc-box {
+  background: #ffffff;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.bmc-keyfunc-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* <!-- Third Section of Careers page End --> */
+
+/* <!-- Forth Section of Careers page Start --> */
+
+.bmc-culture-section {
+  background-color: #ffffff;
+  background-image: url("/assets/images/career/Career18.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 260px;
+  padding: 80px 0;
+}
+
+/* Tittle */
+
+.bmc-culture-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1fb2cc;
+}
+
+/* List */
+
+.bmc-culture-list {
+  text-align: left;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: #222;
+  padding-left: 20px;
+}
+
+.bmc-culture-list li {
+  margin-bottom: 14px;
+}
+
+.bmc-culture-list strong {
+  color: #1fb2cc;
+}
+
+/* <!-- Forth Section of Careers page End --> */
+
+/* Careers Page End */
+
+/* Contact-Us Page Start */
+
+/* <!-- First Section of Contact-Us page Start --> */
+
+.franchise-bs-section {
+  background-image: url("/assets/images/franchise/location_bg.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #ffd400;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image Styling */
+.franchise-bs-image {
+  max-width: 500px;
+}
+
+/* Text Styling */
+.franchise-bs-content h1 {
+  font-size: 3.5rem;
+  color: #00a8c6;
+}
+
+.franchise-bs-content p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Responsive tweak */
+@media (max-width: 991px) {
+  .franchise-bs-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* <!-- First Section of Contact-Us page End --> */
+
+/* <!-- Second Section of Contact-Us page Start --> */
+
+.bmc-contact-section {
+  background-color: #ffffff;
+   background-image: url("/assets/images/contact/Success.png"), 
+    url("/assets/images/contact/tel.png"); 
+
+  background-repeat: no-repeat, no-repeat;
+
+  /* Fixed Positions */
+  background-position: right bottom, /* Success.png */ left bottom; /* tel.png */
+  background-size: 100% auto, 180px;
+  min-height: 650px;
+  padding: 140px 0;
+}
+
+/* Content */
+.bmc-contact-content {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* Headings */
+.bmc-contact-content h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1fb2cc;
+  margin-bottom: 8px;
+}
+
+.bmc-contact-content a {
+  color: #1fb2cc;
+  text-decoration: none;
+}
+
+.bmc-contact-content a:hover {
+  text-decoration: underline;
+}
+
+/* <!-- Second Section of Contact-Us page End --> */
+
+/* <!-- Third Section of Contact-Us page Start --> */
+
+.bmc-writeus-section {
+  background-color: #1fb2cc;
+  padding: 90px 0;
+  color: #ffffff;
+}
+
+.bmc-writeus-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bmc-writeus-subtitle {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e9f8fb;
+}
+
+/* Form */
+.bmc-writeus-form .form-control,
+.bmc-writeus-form .form-select {
+  border-radius: 0;
+  height: 46px;
+  font-size: 14px;
+}
+
+/* Button */
+.bmc-writeus-btn {
+  background-color: #ffd400;
+  color: #000;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.bmc-writeus-btn:hover {
+  background-color: #ffcc00;
+}
+
+/* Map */
+
+.bmc-writeus-map iframe {
+  border-radius: 4px;
+}
+
+/* <!-- Third Section of Contact-Us page End --> */
+
+/* Contact-Us Page End */
